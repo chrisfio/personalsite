@@ -3,7 +3,8 @@
     <head>
         <title>Chris Fiorino - Resume</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-		<script src="jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="personalsite.js"></script>
         <link rel = "stylesheet"
         	type = "text/css"
         	href = "myStyle.css" />  	
@@ -16,7 +17,7 @@
 	        <h2>Software Engineer</h2>
 	    </div>
 
-	    <div class="header">About Me
+	    <div class="header" id="aboutme">About Me
 	    	<ul class = "section">  
 	     		<ul>10 Poultney Street</ul>
 	    		<ul>Baltimore, MD 21230</ul>
@@ -25,7 +26,7 @@
 	    	</ul>
 	    </div>		
 
-	    <div class="header">Experience
+	    <div class="header" id="experience">Experience
 	    	<ul class= "section">  
 	    		<ul class= "jobtitle"> Developer (Part Time), AnalytixBar LLC </ul>
 	    		<ul class= "city"> Baltimore, MD -- December 2016 - Present 	
@@ -64,7 +65,7 @@
 	    	</ul>
 	    </div>	
 
-		<div class="header">Education
+		<div class="header" id="education">Education
 	    	<ul class= "section">  
 	    		<ul> Georgia Institute of Technology </ul>
 	    		<ul> Pursuing Master's Degree in Computer Science, Fall 2017 - TBD </ul>
@@ -77,7 +78,7 @@
 	    	</ul>
 	    </div>	
 
-		<div class="header">Skills/Relevant Course Work
+		<div class="header" id="skills">Skills/Relevant Course Work
 	    	<ul class= "section">  
 	    		<li>GPA in post undergraduate computer science prerequisite courses: 3.82
 	    			<li>4 Credits: Calculus 1 (A), Calculus 2 (A), Intro COSC - Java (B+), Adv Programming - Java (A). 3 Credits: Discrete Math (A)</li>
@@ -88,12 +89,6 @@
 	    		<li>Airbnb Owner: $2k+ monthly profit - Summer 2017 </li>
 	    	</ul>
 	    </div>
-
-	    <script>
-	    	$(document).ready(function() {
-	    		$(".section").hide();
-	    	});
-	    </script>
 	</body>
 </html>
 
