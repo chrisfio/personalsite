@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>Chris Fiorino - Resume</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="jquery-3.2.1.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="jquery-3.2.1.js"></script>
         <link rel = "stylesheet"
         	type = "text/css"
         	href = "myStyle.css" />  	
@@ -12,12 +12,12 @@
     <body>
     
     	<div class="intro">
-	        <ul> Chris Fiorino </ul>
-	        <ul> Software Engineer </ul>
+	        <h2>Chris Fiorino</h2>
+	        <h2>Software Engineer</h2>
 	    </div>
 
-	    <div class="section">
-	    	<ul class = "header"> About Me 
+	    <div class="header">About Me
+	    	<ul class = "section">  
 	     		<ul>10 Poultney Street</ul>
 	    		<ul>Baltimore, MD 21230</ul>
 	    		<ul>(443) 904 - 2141</ul>
@@ -25,8 +25,8 @@
 	    	</ul>
 	    </div>		
 
-	    <div class="section">
-	    	<ul class= "header"> Experience 
+	    <div class="header">Experience
+	    	<ul class= "section">  
 	    		<ul class= "jobtitle"> Developer (Part Time), AnalytixBar LLC </ul>
 	    		<ul class= "city"> Baltimore, MD -- December 2016 - Present 	
 	    			<li>Developed "Verbalize" page using HTML, JavaScript, JQuery, JSON</li>
@@ -64,8 +64,8 @@
 	    	</ul>
 	    </div>	
 
-		<div class="section">
-	    	<ul class= "header"> Education 
+		<div class="header">Education
+	    	<ul class= "section">  
 	    		<ul> Georgia Institute of Technology </ul>
 	    		<ul> Pursuing Master's Degree in Computer Science, Fall 2017 - TBD </ul>
 
@@ -77,8 +77,8 @@
 	    	</ul>
 	    </div>	
 
-		<div class="section">
-	    	<ul class= "header"> Skills/Relevant Course Work 
+		<div class="header">Skills/Relevant Course Work
+	    	<ul class= "section">  
 	    		<li>GPA in post undergraduate computer science prerequisite courses: 3.82
 	    			<li>4 Credits: Calculus 1 (A), Calculus 2 (A), Intro COSC - Java (B+), Adv Programming - Java (A). 3 Credits: Discrete Math (A)</li>
 	    			<li>Udacity/Coursera Courses: Operating Systems, Design and Analysis of Algorithms, Networking and Communication, Computer Architecture</li>
@@ -88,6 +88,12 @@
 	    		<li>Airbnb Owner: $2k+ monthly profit - Summer 2017 </li>
 	    	</ul>
 	    </div>
+
+	    <script>
+	    	$(document).ready(function() {
+	    		$(".section").hide();
+	    	});
+	    </script>
 	</body>
 </html>
 
