@@ -5,14 +5,25 @@ div {
 }
 
 body {
-	background-color: #d2d2d2;
+	background-color: #EAE7E6;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 200%;
+    font-size: 65px;
     text-align: center;
 }
+
+/* Intro Section */
 body div.intro {
- 	color: #808080;
+ 	color: #058ED9;
  	text-align: center;
- 	font: 200%;
+}
+
+/*Section Div Color*/
+body div.header {
+	background-color: #BFC0C0;
+}
+
+/*Section Content*/
+body div div.section {
+	font-size: 100%;
 }
