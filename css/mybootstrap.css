@@ -1,0 +1,13 @@
+/* chris fiorino personal webpage style sheet */ 
+
+
+#websiteTitle {
+	font-size: 55px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+#websiteSlogan {
+	font-size: 35px;
+	font-family: 'Roboto', sans-serif;
+}
