@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'typed.js' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 verbose config Skipping project config: /home/fio/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData typed.js
+9 silly fetchOtherPackageData typed.js
+10 silly cache add args [ 'typed.js', null ]
+11 verbose cache add spec typed.js
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'typed.js',
+12 silly cache add   scope: null,
+12 silly cache add   name: null,
+12 silly cache add   rawSpec: 'typed.js',
+12 silly cache add   spec: '/home/fio/Desktop/resume/personalsite/js/typed.js',
+12 silly cache add   type: 'local' }
+13 silly addLocalTarball shasum (computed) c8da3dbf4472eb8841e4309e4b4b6bb8f0a85618
+14 verbose addTmpTarball /home/fio/Desktop/resume/personalsite/js/typed.js not in flight; adding
+15 verbose addTmpTarball validating metadata from /home/fio/Desktop/resume/personalsite/js/typed.js
+16 verbose tar unpack /home/fio/Desktop/resume/personalsite/js/typed.js
+17 verbose tar unpacking to /tmp/npm-31702-421eb490/unpack-23e78bac
+18 silly gentlyRm /tmp/npm-31702-421eb490/unpack-23e78bac is being purged
+19 verbose gentlyRm don't care about contents; nuking /tmp/npm-31702-421eb490/unpack-23e78bac
+20 silly gunzTarPerm modes [ '775', '664' ]
+21 error not a package /home/fio/Desktop/resume/personalsite/js/typed.js
+22 error addLocal Could not install /home/fio/Desktop/resume/personalsite/js/typed.js
+23 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json'
+23 silly fetchPackageMetaData     at Error (native)
+23 silly fetchPackageMetaData  error for typed.js { [Error: ENOENT: no such file or directory, open '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json']
+23 silly fetchPackageMetaData   errno: -2,
+23 silly fetchPackageMetaData   code: 'ENOENT',
+23 silly fetchPackageMetaData   syscall: 'open',
+23 silly fetchPackageMetaData   path: '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json' }
+24 silly rollbackFailedOptional Starting
+25 silly rollbackFailedOptional Finishing
+26 silly runTopLevelLifecycles Starting
+27 silly runTopLevelLifecycles Finishing
+28 silly install printInstalled
+29 verbose stack Error: ENOENT: no such file or directory, open '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json'
+29 verbose stack     at Error (native)
+30 verbose cwd /home/fio/Desktop/resume/personalsite/js
+31 error Linux 4.4.0-93-generic
+32 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "typed.js"
+33 error node v4.2.6
+34 error npm  v3.5.2
+35 error path /tmp/npm-31702-421eb490/unpack-23e78bac/package.json
+36 error code ENOENT
+37 error errno -2
+38 error syscall open
+39 error enoent ENOENT: no such file or directory, open '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json'
+40 error enoent ENOENT: no such file or directory, open '/tmp/npm-31702-421eb490/unpack-23e78bac/package.json'
+40 error enoent This is most likely not a problem with npm itself
+40 error enoent and is related to npm not being able to find a file.
+41 verbose exit [ -2, true ]

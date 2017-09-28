@@ -1,9 +1,14 @@
 /* chris fiorino personal webpage style sheet */ 
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
 
 
 #websiteTitle {
 	font-size: 55px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
 }
 
@@ -11,3 +16,505 @@
 	font-size: 35px;
 	font-family: 'Roboto', sans-serif;
 }
+
+/*    background-color: #1C2541;*/
+
+.welcome {
+    height: 100vh;
+    background-image: url(../images/rsz_1eso_-_milky_way.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#aboutme {
+    height: auto;
+    background-color: #5BC0BE;
+    position: relative;
+    padding: 90px;
+}
+
+#experience {
+	height: auto;
+    min-height: 75vh;
+    background-color: #1C2541;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#projects {
+    height: auto;
+    background-color: #5BC0BE;
+    position: relative;
+    padding: 90px;
+
+}
+
+#skills {
+	height: auto;
+
+    background-color: #1C2541;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.intromsg {
+	color: #6FFFE9;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	letter-spacing: 2px; 
+    position: absolute;
+    max-width: 1000px;
+    top: 40%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.text1 {
+	color: #6FFFE9;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 38px; 
+    position: absolute;
+    top: 5%;
+    left: 75px;
+}
+
+.heading {
+	color: #6fffe9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin: 0px; 
+	letter-spacing: 1.25px;
+	margin-bottom: 25px;
+}
+
+#aboutmehead {
+	color: #6FFFE9;
+	text-align: center;
+	letter-spacing: 1.5px;
+	padding-bottom: 10px;
+}
+
+.section-subheading {
+	margin-top: 25px;
+}
+
+.subheading {
+	color: #DDDDDD;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	margin: 0px;
+}
+
+.section-subsubheading {
+	margin-top: 25px;
+}
+
+.subsubheading {
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.headingalt {
+	color: #6FFFE9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 50px;
+	margin: 0px; 
+}
+
+.project-subheading {
+	color: #DDDDDD;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	margin: 0px;
+	max-width: 1000px;
+}
+
+.section-subheadingalt {
+	margin-top: 25px;
+}
+
+.section-subsubheadingalt {
+	margin-top: 25px;
+}
+
+.subsubheadingalt {
+	color: #6FFFE9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.project-subheading {
+	color: #6FFFE9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.welcome .topmenu li {
+    display: inline;
+	font-family: 'Roboto', sans-serif;
+   	color: #6FFFE9;
+	font-size: 1.25vw; 
+    margin-right: 1%;
+}
+
+.welcome .topmenu li:last-child {
+    margin-right: 0%;
+}
+
+.welcome .topmenu ul {
+	text-align: center;
+    left: 50%;
+    padding-top: 10px; 
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+	padding: 90px;
+}
+
+#aboutme-wrapper {
+	background-color: #3a506b;
+	border-radius: 8px;
+	max-width: 1500px;
+	position: relative;
+	margin: auto;
+}
+
+#projects-wrapper {
+	background-color: #3a506b;
+	border-radius: 8px;
+	max-width: 1500px;
+	position: relative;
+	margin: auto;
+}
+
+#about-subheading {
+	width: 63%;
+}
+
+body #aboutme .wrapper .profile {
+	max-width:100%;
+	max-height:100%;
+	width: 30%;
+	display: inline-block;
+	height: auto;
+	border-radius: 20%;
+	float: right;
+	margin-top: -10%;
+}
+
+.download-boxes{
+	position: relative;
+	float: right;
+	margin-right: 5%;
+	width: 19%;
+	margin-top: -150px;
+}
+
+.download-button {
+	display: inline-block;
+	height: 45px;
+	min-width: 190px; 
+	width: 100%;
+	float: right;
+	border-radius: 2px; 
+	background-color: #5bc0be;
+	color: #1c2541;
+  	font-size: 25px;
+	position: absolute;
+	padding: auto;
+
+}
+
+#cover-letter {
+
+}
+
+#resume {
+	margin-top: 65px;
+
+}
+
+.fa-download {
+	margin-right: 10px;
+}
+
+.buttonDownload {
+	font-family: 'Roboto', sans-serif;
+	color: #1c2541;
+	font-weight: bold;
+	position: inherit;
+	padding-top: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+
+/* Responsive Image */
+
+/* Dots */
+.circle:before {
+  content: ' \25CF';
+  font-size: 25px;
+}
+
+/* Timeline Section */
+
+#timeline-container {
+	position: relative;
+	padding-top: 33px;
+	width: 90%;
+	max-width: 1420px;
+	margin: auto;
+	padding-bottom: 30px;
+}
+
+.timeline-block {
+	position: relative;
+	margin: 2em 0px;
+}
+
+.timeline-dot {
+	background: #5bc0be;
+	position: absolute;
+	top: 8px;
+	left: 12px;
+    width: 30px;
+    height: 30px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px #6fffe9, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-contentbox {
+    position: relative;
+    margin-left: 60px;
+    margin-right: 30px;
+    background: #3a506b;
+    border-radius: 5px;
+    padding: 1em;
+    color: #DDDDDD;
+}
+
+.timeline-contentbox::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #3a506b;
+}
+
+.timeline-contentbox::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.timeline-contentbox .company{
+	color: #5bc0be;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.timeline-contentbox .timeline-contentinfo{
+    background: #1C2541;
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    box-shadow: inset 0 2px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+}
+
+.timeline-contentbox .timeline-contentinfo .timeline-contentinfo-title, .timeline-contentbox .timeline-contentinfo .timeline-contentinfo-date {
+    width: calc(50% - 2px);
+    display: inline-block;
+}
+
+.timeline-contentinfo-date {
+    text-align: right;
+}
+
+.timeline-contentbox .content-skills {
+    font-size: 12px;
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.timeline-contentbox .content-skills li{
+	background: #1c2541;
+    display: inline-block;
+    padding: 2px 10px;
+    color: #5bc0be;
+    margin: 3px 2px;
+    text-align: center;
+    flex-grow: 1;
+   	border-radius: 25px;	
+}
+
+#timeline-container::before {
+	content: "";
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    height: 100%;
+    width: 4px;
+    background: #6fffe9;
+}
+
+.timeline-block:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.job-accomplishments {
+	padding-left: 25px;
+}
+
+.job-accomplishments li {
+	margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 1024px) {
+	.timeline-dot {
+		width: 30px;
+    	height: 30px;
+    	left: 50%;
+    	margin-left: -15px;
+    	margin-top: 8px;
+	}
+
+	.timeline-contentbox {
+    	margin-left: 0;
+    	padding: 1.6em;
+    	width: 35%;
+    	margin: 0 5%;
+	}
+
+	.timeline-contentbox::before {
+		top: 24px;
+    	left: 100%;
+    	border-color: transparent;
+    	border-left-color: #3a506b;
+	}
+    
+    #timeline-container::before {
+    	left: 50%;
+    	margin-left: -2px;
+    }
+
+    .timeline-block {
+    	margin: 4em 0px;
+    }
+
+   	.timeline-block:nth-child(even) .timeline-contentbox {
+    	float: right;
+ 	}
+
+  	.timeline-block:nth-child(even) .timeline-contentbox::before {
+	    top: 24px;
+	    left: auto;
+	    right: 100%;
+	    border-color: transparent;
+	    border-right-color: #3a506b;
+  	}
+
+    .timeline-block:last-child {
+    	margin-bottom: 0;
+    }
+
+    .timeline-iconbox {
+	    left: 67.5%;
+	    position: absolute;
+	    margin-right: 100px;
+	}
+
+	.timeline-block:nth-child(even) .timeline-iconbox {
+	    left: 9.5%;
+	    position: absolute;
+	    margin-left: 100px;
+	}
+
+	.timeline-block .fa{
+		color: #DDDDDD;
+		font-size: 13em;
+	}
+	
+	#five-bullet-nine-line{
+		margin-top: 80px;
+	}
+
+	#five-bullet-eleven-line{
+		margin-top: 90px;
+	}
+
+	#three-bullet-four-line{
+		margin-top: 15px;
+	}
+
+	#four-bullet-eleven-line{
+		margin-top: 75px;
+	}	
+
+	#seven-bullet-nine-line{
+		margin-top: 85px;
+	}
+
+	#three-bullet-three-line{
+		margin-top: 10px;
+	}
+	
+	.line {
+		display: block;
+    	margin: 30px 0;
+    	width: 50%;
+    	height: 4px;
+	    background-color: #5bc0be;
+	}
+	.fa-angle-down {
+		color: #6fffe9;
+	}
+
+	#intro-arrow {
+		font-size: 100px;
+		width: 100%;
+		position: absolute;
+		bottom: 10px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline-contentbox .company{
+		font-size: 1.75rem;
+		margin-top: 0px;
+		margin-bottom: 6px;
+	}
+
+	.timeline-contextbox p {
+		font-size: 1rem;
+	}
+}
+

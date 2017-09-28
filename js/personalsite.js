@@ -1,27 +1,8 @@
 $(document).ready(function() {
-	$(".section").hide();
-
-/* Toggle Buttons*/
-/* About Me Section*/
-	$("#aboutme").click(function(){
-		$("#aboutmecontent").toggle();
+	$('.type-it').typeIt({
+	     strings: ['This is my string!']
 	});
-
-/* Experience Section*/
-	$("#experience").click(function(){
-		$("#experiencecontent").toggle();
-	});
-
-/* Education Section*/
-	$("#education").click(function(){
-		$("#educationcontent").toggle();
-	});
-
-/* Skills and Course Work Section*/
-	$("#skills").click(function(){
-		$("#skillscontent").toggle();
-	});
-
-
 
 });
+
+
