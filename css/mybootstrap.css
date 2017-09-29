@@ -53,11 +53,9 @@ html, body {
 
 #skills {
 	height: auto;
-
     background-color: #1C2541;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 90px;
 }
 
 
@@ -90,7 +88,7 @@ html, body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 50px;
 	margin: 0px; 
-	letter-spacing: 1.25px;
+	letter-spacing: 1.5px;
 	margin-bottom: 25px;
 }
 
@@ -119,8 +117,9 @@ html, body {
 .subsubheading {
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0px;
+	font-weight: normal;
 }
 
 .headingalt {
@@ -187,7 +186,7 @@ html, body {
 #aboutme-wrapper {
 	background-color: #3a506b;
 	border-radius: 8px;
-	max-width: 1500px;
+	max-width: 1200px;
 	position: relative;
 	margin: auto;
 }
@@ -195,7 +194,7 @@ html, body {
 #projects-wrapper {
 	background-color: #3a506b;
 	border-radius: 8px;
-	max-width: 1500px;
+	max-width: 1200px;
 	position: relative;
 	margin: auto;
 }
@@ -507,6 +506,125 @@ a {
 		position: absolute;
 		bottom: 10px;
 		text-align: center;
+	}
+
+	.mfizz-icon-font {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.contact-icon-box-row .contact-icon-box .contact-icon {
+		font-size: 100px;
+	}
+
+
+	.icon-box-row:before, .icon-box-row:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	.icon-box-row:first-child{
+		margin-top: 40px;
+	}
+
+	.icon-box-row {
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 800px;
+		left: 50%;
+	}
+
+	.contact-icon-box-row:before, .contact-icon-box-row:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	.contact-icon-box-row:first-child{
+		margin-top: 40px;
+	}
+
+	.contact-icon-box-row {
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 1000px;
+		left: 50%;
+	}	
+
+	.icon-box {
+		width: 25%;
+		white-space: nowrap;
+    	cursor: pointer;
+    	padding: 0px;
+    	float: left;
+    	text-align: center;
+    	margin-top: 40px;
+	}
+
+	.contact-icon-box {
+		width: 20%;
+		white-space: nowrap;
+    	cursor: pointer;
+    	padding: 0px;
+    	float: left;
+    	text-align: center;
+    	margin-top: 40px;
+	}
+
+	.icon-section {
+		overflow: hidden;
+	}
+	
+	#skills-wrapper {
+		background-color: #3a506b;
+		border-radius: 8px;
+		max-width: 1200px;
+		position: relative;
+		margin: auto;
+	}
+
+	.skill-url {
+		color: white;
+	}
+
+	.icon-text {
+		margin-top: -5px;
+	}
+
+	.contact-text {
+		margin-top: -2px;
+		font-size: 14px;
+	}
+
+	.actual-icon {
+		font-size: 100px;
+	}
+
+	.icon-java {
+		margin-left: 34px;
+	}
+
+	.icon-html5, .icon-css3{
+		margin-left: 16px;	
+	}
+
+	.icon-javascript {
+		margin-left: 18px;
+	}
+
+	.icon-python {
+		margin-top: 5px;
+		margin-left: 18px;
+	}
+
+	.icon-git {
+		margin-left: 7px; 
+	}
+
+	#mail-icon {
+		margin-top: -3px;
+		margin-bottom: 3px;
 	}
 }
 
