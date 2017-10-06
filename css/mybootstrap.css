@@ -70,10 +70,10 @@ html, body {
 	color: #6FFFE9;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-	font-size: 70px;
+	font-size: 60px;
 	letter-spacing: 2px; 
     position: absolute;
-    max-width: 1000px;
+    max-width: 900px;
     top: 40%;
     left: 50%;
     margin-right: -50%;
@@ -93,7 +93,7 @@ html, body {
 .heading {
 	color: #6fffe9;
 	font-family: 'Roboto', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	margin: 0px; 
 	letter-spacing: 1.5px;
 	margin-bottom: 25px;
@@ -113,7 +113,7 @@ html, body {
 .subheading {
 	color: #DDDDDD;
 	font-family: 'Roboto', sans-serif;
-	font-size: 28px;
+	font-size: 22px;
 	margin: 0px;
 }
 
@@ -132,7 +132,7 @@ html, body {
 .headingalt {
 	color: #6FFFE9;
 	font-family: 'Roboto', sans-serif;
-	font-size: 50px;
+	font-size: 40px;
 	margin: 0px; 
 }
 
@@ -192,7 +192,7 @@ html, body {
 
 #aboutme-wrapper {
 	background-color: #3a506b;
-	border-radius: 8px;
+	border-radius: 4px;
 	max-width: 1200px;
 	position: relative;
 	margin: auto;
@@ -200,7 +200,7 @@ html, body {
 
 #projects-wrapper {
 	background-color: #3a506b;
-	border-radius: 8px;
+	border-radius: 4px;
 	max-width: 1200px;
 	position: relative;
 	margin: auto;
@@ -210,13 +210,17 @@ html, body {
 	width: 63%;
 }
 
+#about-subsubheading {
+	width: 63%;
+}
+
 body #aboutme .wrapper .profile {
 	max-width:100%;
 	max-height:100%;
-	width: 30%;
+	width: 33%;
 	display: inline-block;
 	height: auto;
-	border-radius: 20%;
+	border-radius: 1px;
 	float: right;
 	margin-top: -10%;
 }
@@ -231,14 +235,14 @@ body #aboutme .wrapper .profile {
 
 .download-button {
 	display: inline-block;
-	height: 45px;
-	min-width: 190px; 
-	width: 100%;
+	height: 40px;
+	min-width: 150px; 
+	width: 90%;
 	float: right;
 	border-radius: 2px; 
 	background-color: #5bc0be;
 	color: #1c2541;
-  	font-size: 25px;
+  	font-size: 22px;
 	position: absolute;
 	padding: auto;
 
@@ -275,17 +279,11 @@ a {
 
 /* Responsive Image */
 
-/* Dots 
-.circle:before {
-  content: ' \25CF';
-  font-size: 25px;
-  color: #6FFFE9;
-}
-*/
+/* Dots */
 
 .circle {
-	width: 14px;
-	height: 14px;
+	width: 11px;
+	height: 11px;
 	border-radius: 50%;
 	display: inline-block;
 	background: none;
@@ -421,121 +419,591 @@ a {
 	margin-bottom: 5px;
 }
 
-@media only screen and (min-width: 1024px) {
-	.timeline-dot {
-		width: 30px;
-    	height: 30px;
-    	left: 50%;
-    	margin-left: -15px;
-    	margin-top: 8px;
+
+.timeline-dot {
+	width: 30px;
+	height: 30px;
+	left: 50%;
+	margin-left: -15px;
+	margin-top: 8px;
+}
+
+.timeline-contentbox {
+	margin-left: 0;
+	padding: 1.6em;
+	width: 35%;
+	margin: 0 5%;
+}
+
+.timeline-contentbox::before {
+	top: 24px;
+	left: 100%;
+	border-color: transparent;
+	border-left-color: #3a506b;
+}
+
+#timeline-container::before {
+	left: 50%;
+	margin-left: -2px;
+}
+
+.timeline-block {
+	margin: 4em 0px;
+}
+
+.timeline-block:nth-child(even) .timeline-contentbox {
+	float: right;
 	}
 
-	.timeline-contentbox {
-    	margin-left: 0;
-    	padding: 1.6em;
-    	width: 35%;
-    	margin: 0 5%;
+.timeline-block:nth-child(even) .timeline-contentbox::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #3a506b;
 	}
 
-	.timeline-contentbox::before {
-		top: 24px;
-    	left: 100%;
-    	border-color: transparent;
-    	border-left-color: #3a506b;
+.timeline-block:last-child {
+	margin-bottom: 0;
+}
+
+.timeline-iconbox {
+    left: 67.5%;
+    position: absolute;
+    margin-right: 100px;
+}
+
+.timeline-block:nth-child(even) .timeline-iconbox {
+    left: 9.5%;
+    position: absolute;
+    margin-left: 100px;
+}
+
+.timeline-block .fa{
+	margin-left: 46px;
+	color: #DDDDDD;
+	font-size: 8em;
+}
+
+#two-bullet-two-line{
+	margin-top: 30px;
+}
+
+#five-bullet-nine-line{
+	margin-top: 110px;
+}
+
+#five-bullet-eleven-line{
+	margin-top: 120px;
+}
+
+#three-bullet-four-line{
+	margin-top: 40px;
+}
+
+#four-bullet-eleven-line{
+	margin-top: 105px;
+}	
+
+#seven-bullet-nine-line{
+	margin-top: 115px;
+}
+
+#three-bullet-three-line{
+	margin-top: 55px;
+}
+
+.line {
+	display: block;
+	margin: 30px 0;
+	width: 50%;
+	height: 4px;
+    background-color: #5bc0be;
+}
+.fa-angle-down {
+	color: #6fffe9;
+}
+
+#intro-arrow {
+	font-size: 100px;
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+#intro-arrow:hover {
+	font-size: 108px;
+}
+
+#arrow-see-more {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: #6fffe9;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+} 
+
+#projects-textbody{
+	margin-bottom: 10px;
+}
+
+#projects-textbody:hover{
+	color: #6fffe9;
+}
+
+.mfizz-icon-font {
+	font-size: 20px;
+	text-align: center;
+}
+
+.contact-icon-box-row .contact-icon-box .contact-icon {
+	font-size: 100px;
+}
+
+
+.icon-box-row:before, .icon-box-row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.icon-box-row:first-child{
+	margin-top: 40px;
+}
+
+.icon-box-row {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 800px;
+	left: 50%;
+}
+
+.contact-icon-box-row:before, .contact-icon-box-row:after {
+	display: table;
+	line-height: 0;
+	content: "";
+}
+
+.contact-icon-box-row:first-child{
+	margin-top: 40px;
+}
+
+.contact-icon-box-row {
+	overflow: hidden;
+	margin: 0 auto;
+	max-width: 1000px;
+	left: 50%;
+}	
+
+.icon-box {
+	width: 25%;
+	white-space: nowrap;
+	cursor: pointer;
+	padding: 0px;
+	float: left;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.contact-icon-box {
+	width: 20%;
+	white-space: nowrap;
+	cursor: pointer;
+	padding: 0px;
+	float: left;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.icon-section {
+	overflow: hidden;
+}
+
+#skills-wrapper {
+	background-color: #3a506b;
+	border-radius: 8px;
+	max-width: 1200px;
+	position: relative;
+	margin: auto;
+}
+
+.skill-url {
+	color: white;
+}
+
+.icon-text {
+	margin-top: -5px;
+}
+
+.contact-text {
+	margin-top: -2px;
+	font-size: 14px;
+}
+
+.actual-icon {
+	font-size: 100px;
+}
+
+.icon-java {
+	margin-left: 34px;
+}
+
+.icon-html5, .icon-css3{
+	margin-left: 16px;	
+}
+
+.icon-javascript {
+	margin-left: 18px;
+}
+
+.icon-python {
+	margin-top: 5px;
+	margin-left: 18px;
+}
+
+.icon-git {
+	margin-left: 7px; 
+}
+
+#mail-icon {
+	margin-top: -3px;
+	margin-bottom: 3px;
+}
+
+.icon-box:hover{
+	color: #6fffe9;
+	font-weight: bold;
+}
+
+.contact-icon-box:hover {
+	color: #6fffe9;
+	font-weight: bold;
+}
+
+.timeline-contentbox .company{
+	font-size: 1.5rem;
+	margin-top: 0px;
+	margin-bottom: 6px;
+}
+
+.timeline-contextbox p {
+	font-size: 1rem;
+}
+
+.circle-text {
+	position: absolute;
+	font-size: 18px;
+	margin-top: 30px;
+	color: #6FFFE9;
+}
+
+#circle-text-aboutme{
+	margin-left: -52px;
+}
+
+#circle-text-experience{
+	margin-left: -57px;
+}
+
+#circle-text-projects{
+	margin-left: -44px;
+}
+
+#circle-text-skills{
+	margin-left: -34px;
+}
+
+#circle-text-contactme{
+	margin-left: -58px;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1025px) {
+
+	.circle {
+		width: 9px;
+		height: 9px;
 	}
-    
-    #timeline-container::before {
-    	left: 50%;
-    	margin-left: -2px;
-    }
 
-    .timeline-block {
-    	margin: 4em 0px;
-    }
-
-   	.timeline-block:nth-child(even) .timeline-contentbox {
-    	float: right;
- 	}
-
-  	.timeline-block:nth-child(even) .timeline-contentbox::before {
-	    top: 24px;
-	    left: auto;
-	    right: 100%;
-	    border-color: transparent;
-	    border-right-color: #3a506b;
-  	}
-
-    .timeline-block:last-child {
-    	margin-bottom: 0;
-    }
-
-    .timeline-iconbox {
-	    left: 67.5%;
-	    position: absolute;
-	    margin-right: 100px;
-	}
-
-	.timeline-block:nth-child(even) .timeline-iconbox {
-	    left: 9.5%;
-	    position: absolute;
-	    margin-left: 100px;
-	}
-
-	.timeline-block .fa{
-		color: #DDDDDD;
-		font-size: 13em;
-	}
-	
-	#five-bullet-nine-line{
-		margin-top: 80px;
-	}
-
-	#five-bullet-eleven-line{
-		margin-top: 90px;
-	}
-
-	#three-bullet-four-line{
-		margin-top: 15px;
-	}
-
-	#four-bullet-eleven-line{
-		margin-top: 75px;
-	}	
-
-	#seven-bullet-nine-line{
-		margin-top: 85px;
-	}
-
-	#three-bullet-three-line{
-		margin-top: 10px;
-	}
-	
-	.line {
-		display: block;
-    	margin: 30px 0;
-    	width: 50%;
-    	height: 4px;
-	    background-color: #5bc0be;
-	}
-	.fa-angle-down {
-		color: #6fffe9;
+	.intromsg {
+		width: 800px;
+		font-size: 50px;
+		letter-spacing: 1.6px;
 	}
 
 	#intro-arrow {
-		font-size: 100px;
+		font-size: 80px;
+	}
+
+	#intro-arrow:hover {
+		font-size: 85px;
+	}
+
+	#arrow-see-more {
+		font-size: 12px;
+		bottom: -5px;
+	}
+
+	.circle-text {
+		font-size: 12px;
+	}
+
+	#circle-text-aboutme {
+		margin-left: -32px;
+	}
+
+	#circle-text-experience {
+		margin-left: -35px;
+	}
+
+	#circle-text-projects{
+		margin-left: -29px;
+	}
+
+	#circle-text-skills{
+		margin-left: -22px;
+	}
+
+	#circle-text-contactme{
+		margin-left: -37px;
+	}
+
+	.circle-text {
+		margin-top: 27px;
+	}
+
+	.heading {
+		font-size: 40px;
+		letter-spacing: 1.4px;
+	}
+
+	.headingalt {
+		font-size: 40px;
+		letter-spacing: 1.4px;
+	}
+
+	.subheading {
+		font-size: 20px;
+	}
+
+	.subsubheading {
+		font-size: 15px;
+	}
+
+	#about-subheading {
+		width: 750px;
+	}
+
+	.wrapper {
+		padding: 70px;
+	}
+
+	#aboutme, #experience, #projects, #skills, #contactme, .wrapper{
+	    padding: 70px;
+	}
+
+	body #aboutme .wrapper .profile {
+    	margin-top: 25px;
+	}
+
+	.download-button {
+		height: 37px;
+		font-size: 18px;
+	}
+
+	.timeline-block .fa {
+		font-size: 6em;
+		margin-left: 11%;
+	}
+
+	.timeline-contentbox .company {
+		font-size: 20px; 
+	}
+
+	.timeline-contentbox .timeline-contentinfo {
+		font-size: 10px;
+	}
+
+	.job-accomplishments li {
+		font-size: 12px;
+	}
+
+	#timeline-container {
+		width: 100%;
+	}
+
+	.timeline-contentbox {
+		width: 40%;
+		padding-top: 14px;
+    	padding-right: 10px;
+    	padding-bottom: 14px;
+    	padding-left: 10px;
+	}
+
+	.timeline-contentbox .content-skills {
+		font-size: 10px;
+	}
+
+	#two-bullet-two-line{
+		margin-top: 20px;
+	}
+
+	#five-bullet-nine-line{
+		margin-top: 95px;
+	}
+
+	#five-bullet-eleven-line{
+		margin-top: 115px;
+	}
+
+	#three-bullet-four-line{
+		margin-top: 25px;
+	}
+
+	#four-bullet-eleven-line{
+		margin-top: 90px;
+	}	
+
+	#seven-bullet-nine-line{
+		margin-top: 100px;
+	}
+
+	#three-bullet-three-line{
+		margin-top: 35px;
+	}
+
+	.icon-box {
+		margin-top: 10px;
+	}
+
+	.icon-box-row {
+		max-width: 750px;
+	}
+
+	.actual-icon {
+		font-size: 75px;
+	}
+
+	.contact-icon-box-row .contact-icon-box .contact-icon {
+		font-size: 80px;
+	}
+
+	.contact-icon-box-row {
+		max-width: 800px;
+	}
+
+	.contact-icon-box-row:first-child {
+		margin-top: 10px;
+	}
+
+	.contact-text {
+		font-size: 12px;
+	}
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.intromsg {
+		color: #6FFFE9;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+		letter-spacing: 1px; 
+	    position: absolute;
+	    max-width: 768px;
+	    top: 40%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	#intro-arrow {
+		font-size: 75px;
 		width: 100%;
 		position: absolute;
 		bottom: 10px;
 		text-align: center;
+		color: #6FFFE9;
+	}
+
+	#intro-arrow:hover {
+		font-size: 80px;
+	}
+
+	#arrow-see-more {
+		position: absolute;
+    	bottom: 3px;
+    	width: 100%;
+    	text-align: center;
+    	color: #6fffe9;
+    	font-family: 'Roboto', sans-serif;
+    	font-size: 14px;
+	}
+
+	.welcome {
+	    height: 100vh;
+	    background-image: url(../images/rsz_1eso_-_milky_way.jpg);
+	    background-size: cover;
+	    background-position: center;
+	    background-color: #1c2541;
+	    position: relative;
+	}
+
+	#aboutme, #experience, #projects, #skills, #contactme, .wrapper{
+	    padding: 45px;
+	}
+
+	.heading, .headingalt{
+		font-size: 35px;
+    	letter-spacing: 1px;
+    	margin-bottom: 15px;
+	}
+
+	.subheading, .subheadingalt{
+		font-size: 22px;
+	}
+
+	.subsubheading, .subsubheadingalt{
+		font-size: 16px;
+	}
+
+	.download-button {
+		height: 40px;
+		min-width: 180px;
+		font-size: 20px;
+		padding-top: 0px;
+	}
+
+	body #aboutme .wrapper .profile {
+		margin-top: 10%
+	}
+
+	#about-subheading {
+		width: 100%; 
+	}
+
+	.line {
+	    display: block;
+	    margin: 30px 0;
+	    width: 50%;
+	    height: 3px;
+	    background-color: #5bc0be;
+	}
+
+	.timeline-iconbox .fa {
+		display: none;
 	}
 
 	.mfizz-icon-font {
-		font-size: 20px;
+		font-size: 16px;
 		text-align: center;
 	}
 
 	.contact-icon-box-row .contact-icon-box .contact-icon {
-		font-size: 100px;
+		font-size: 75px;
 	}
 
 
@@ -546,7 +1014,7 @@ a {
 	}
 
 	.icon-box-row:first-child{
-		margin-top: 40px;
+		margin-top: 30px;
 	}
 
 	.icon-box-row {
@@ -563,7 +1031,240 @@ a {
 	}
 
 	.contact-icon-box-row:first-child{
-		margin-top: 40px;
+		margin-top: 30px;
+	}
+
+	.contact-icon-box-row {
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 1000px;
+		left: 50%;
+	}	
+
+	.icon-box {
+		width: 25%;
+		white-space: nowrap;
+    	cursor: pointer;
+    	padding: 0px;
+    	float: left;
+    	text-align: center;
+    	margin-top: 40px;
+	}
+
+	.contact-icon-box {
+		width: 20%;
+		white-space: nowrap;
+    	cursor: pointer;
+    	padding: 0px;
+    	float: left;
+    	text-align: center;
+    	margin-top: 40px;
+	}
+
+	.icon-section {
+		overflow: hidden;
+	}
+	
+	#skills-wrapper {
+		background-color: #3a506b;
+		border-radius: 4px;
+		max-width: 1200px;
+		position: relative;
+		margin: auto;
+	}
+
+	.skill-url {
+		color: white;
+	}
+
+	.icon-text {
+		margin-top: -5px;
+	}
+
+	.contact-text {
+		margin-top: -2px;
+		font-size: 12px;
+	}
+
+	.actual-icon {
+		font-size: 75px;
+	}
+
+	.icon-java {
+		margin-left: 34px;
+	}
+
+	.icon-html5, .icon-css3{
+		margin-left: 16px;	
+	}
+
+	.icon-javascript {
+		margin-left: 18px;
+	}
+
+	.icon-python {
+		margin-top: 5px;
+		margin-left: 18px;
+	}
+
+	.icon-git {
+		margin-left: 7px; 
+	}
+
+	#mail-icon {
+		margin-top: -3px;
+		margin-bottom: 3px;
+	}
+
+	.icon-box:hover{
+		color: #6fffe9;
+		font-weight: bold;
+	}
+
+	.contact-icon-box:hover {
+		color: #6fffe9;
+		font-weight: bold;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px) {
+	.subheading, .subheadingalt {
+    font-size: 20px;
+	}
+
+	.contact-icon-box .contact-text {
+		margin-top: -2px;
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+	.intromsg {
+		color: #6FFFE9;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 40px;
+		letter-spacing: 1px; 
+	    position: absolute;
+	    max-width: 768px;
+	    top: 40%;
+	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	}
+
+	#intro-arrow {
+		font-size: 75px;
+		width: 100%;
+		position: absolute;
+		bottom: 10px;
+		text-align: center;
+		color: #6FFFE9;
+	}
+
+	#intro-arrow:hover {
+		font-size: 80px;
+	}
+
+	#arrow-see-more {
+		position: absolute;
+    	bottom: 3px;
+    	width: 100%;
+    	text-align: center;
+    	color: #6fffe9;
+    	font-family: 'Roboto', sans-serif;
+    	font-size: 14px;
+	}
+
+	.welcome {
+	    height: 100vh;
+	    background-image: url(../images/rsz_1eso_-_milky_way.jpg);
+	    background-size: cover;
+	    background-position: center;
+	    background-color: #1c2541;
+	    position: relative;
+	}
+
+	#aboutme, #experience, #projects, #skills, #contactme, .wrapper{
+	    padding: 45px;
+	}
+
+	.heading, .headingalt{
+		font-size: 35px;
+    	letter-spacing: 1px;
+    	margin-bottom: 15px;
+	}
+
+	.subheading, .subheadingalt{
+		font-size: 22px;
+	}
+
+	.subsubheading, .subsubheadingalt{
+		font-size: 16px;
+	}
+
+	.download-button {
+		height: 40px;
+		min-width: 180px;
+		font-size: 20px;
+		padding-top: 8px;
+	}
+
+	body #aboutme .wrapper .profile {
+		margin-top: 10%
+	}
+
+	#about-subheading {
+		width: 100%; 
+	}
+
+	.line {
+	    display: block;
+	    margin: 30px 0;
+	    width: 50%;
+	    height: 3px;
+	    background-color: #5bc0be;
+	}
+
+	.timeline-iconbox .fa {
+		display: none;
+	}
+
+	.mfizz-icon-font {
+		font-size: 16px;
+		text-align: center;
+	}
+
+	.contact-icon-box-row .contact-icon-box .contact-icon {
+		font-size: 75px;
+	}
+
+
+	.icon-box-row:before, .icon-box-row:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	.icon-box-row:first-child{
+		margin-top: 30px;
+	}
+
+	.icon-box-row {
+		overflow: hidden;
+		margin: 0 auto;
+		max-width: 800px;
+		left: 50%;
+	}
+
+	.contact-icon-box-row:before, .contact-icon-box-row:after {
+		display: table;
+		line-height: 0;
+		content: "";
+	}
+
+	.contact-icon-box-row:first-child{
+		margin-top: 30px;
 	}
 
 	.contact-icon-box-row {
@@ -615,11 +1316,11 @@ a {
 
 	.contact-text {
 		margin-top: -2px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.actual-icon {
-		font-size: 100px;
+		font-size: 75px;
 	}
 
 	.icon-java {
@@ -656,45 +1357,6 @@ a {
 	.contact-icon-box:hover {
 		color: #6fffe9;
 		font-weight: bold;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.timeline-contentbox .company{
-		font-size: 1.75rem;
-		margin-top: 0px;
-		margin-bottom: 6px;
-	}
-
-	.timeline-contextbox p {
-		font-size: 1rem;
-	}
-
-	.circle-text {
-		position: absolute;
-    	font-size: 20px;
-   	    margin-top: 30px;
-   	    color: #6FFFE9;
-	}
-
-	#circle-text-aboutme{
-		margin-left: -52px;
-	}
-
-	#circle-text-experience{
-		margin-left: -57px;
-	}
-
-	#circle-text-projects{
-		margin-left: -44px;
-	}
-	
-	#circle-text-skills{
-		margin-left: -34px;
-	}
-	
-	#circle-text-contactme{
-		margin-left: -58px;
 	}
 }
 
